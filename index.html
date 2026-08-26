@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A creative developer portfolio built with HTML, CSS, and JavaScript.">
+  <title>Ari Vale | Creative Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Ari Vale home">AV<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-availability" href="#contact"><i></i> Available for work</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Independent creative developer</p>
+        <h1 id="hero-title">Ideas with<br><em>gravity.</em></h1>
+        <p class="hero-intro">I design and build digital experiences that feel as good as they function, turning ambitious ideas into clear, memorable products.</p>
+        <div class="hero-actions">
+          <a class="button button-primary magnetic" href="#work">Explore my work <span aria-hidden="true">&#8599;</span></a>
+          <a class="text-link" href="#contact">Let's talk <span aria-hidden="true">&#8594;</span></a>
+        </div>
+      </div>
+      <div class="hero-art reveal reveal-delay" aria-label="Abstract portrait artwork" role="img">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="portrait-shape"><span></span></div>
+        <div class="art-label label-top">Selected / 2024</div>
+        <div class="art-label label-bottom">Design + Code</div>
+        <div class="scroll-note"><span></span> Scroll to explore</div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Areas of expertise">
+      <div class="marquee-track"><span>Art direction</span><b>+</b><span>Digital products</span><b>+</b><span>Creative technology</span><b>+</b><span>Art direction</span><b>+</b><span>Digital products</span><b>+</b><span>Creative technology</span><b>+</b></div>
+    </section>
+
+    <section id="work" class="work section-wrap" aria-labelledby="work-title">
+      <div class="section-heading reveal"><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Made to<br><em>matter.</em></h2><p class="section-summary">A few collaborations, experiments, and products I am proud to have brought into the world.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-large reveal">
+          <a class="project-image image-one" href="#contact" aria-label="View the Northstar project"><span class="image-tag">01 / Product design</span><span class="project-arrow">&#8599;</span></a>
+          <div class="project-meta"><h3>Northstar</h3><p>Reframing the future of remote collaboration.</p><span class="project-year">2024</span></div>
+        </article>
+        <article class="project-card project-offset reveal reveal-delay-short">
+          <a class="project-image image-two" href="#contact" aria-label="View the Artefact project"><span class="image-tag">02 / Digital experience</span><span class="project-arrow">&#8599;</span></a>
+          <div class="project-meta"><h3>Artefact</h3><p>An online gallery for the endlessly curious.</p><span class="project-year">2023</span></div>
+        </article>
+        <article class="project-card project-wide reveal">
+          <a class="project-image image-three" href="#contact" aria-label="View the Serein project"><span class="image-tag">03 / Brand world</span><span class="project-arrow">&#8599;</span></a>
+          <div class="project-meta"><h3>Serein</h3><p>A quieter kind of wellness brand.</p><span class="project-year">2023</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about section-wrap" aria-labelledby="about-title">
+      <div class="about-stamp reveal"><span>Thoughtful<br>by default</span><strong>AV</strong></div>
+      <div class="about-copy reveal reveal-delay"><p class="eyebrow">02 / A little about me</p><h2 id="about-title">Curious by<br><em>nature.</em></h2><p>I am Ari, a designer and developer based in Lisbon. My work sits at the intersection of visual storytelling, thoughtful interaction, and the web.</p><p>When I am not making things, I am usually collecting old magazines, learning a new recipe, or looking for the best light in the city.</p><a class="text-link" href="#contact">More about me <span aria-hidden="true">&#8594;</span></a></div>
+      <div class="skills reveal reveal-delay-short"><div><span>01</span><strong>Strategy</strong><small>Finding the signal in the noise.</small></div><div><span>02</span><strong>Design</strong><small>Making the complex feel simple.</small></div><div><span>03</span><strong>Development</strong><small>Building it with care.</small></div></div>
+    </section>
+
+    <section id="contact" class="contact section-wrap reveal" aria-labelledby="contact-title"><p class="eyebrow">03 / Start a conversation</p><h2 id="contact-title">Have a good<br><em>feeling?</em></h2><a class="email-link" href="mailto:hello@arivale.dev">hello@arivale.dev <span aria-hidden="true">&#8599;</span></a><div class="contact-footer"><span>Currently booking projects for Q4 2024</span><button class="theme-toggle" type="button" aria-label="Toggle color theme"><span></span> Change mood</button></div></section>
+  </main>
+
+  <footer class="site-footer section-wrap"><span>AV / Creative developer</span><span>Built with intention &#9829;</span><a href="#top">Back to top &#8593;</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
